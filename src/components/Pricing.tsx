@@ -65,7 +65,7 @@ const Pricing = () => {
         "Email support",
         "API access"
       ],
-      ctaText: "Start free trial",
+      ctaText: "Register",
       isPopular: false,
     },
     {
@@ -81,7 +81,7 @@ const Pricing = () => {
         "Custom integrations",
         "Performance reporting"
       ],
-      ctaText: "Start free trial",
+      ctaText: "Register",
       isPopular: true,
       bgColor: "bg-gradient-to-br from-white to-redstart-gray-light"
     },
@@ -129,6 +129,43 @@ const Pricing = () => {
               bgColor={plan.bgColor}
             />
           ))}
+        </div>
+
+        {/* New section */}
+        <div className="mt-20 bg-gradient-to-r from-redstart-teal to-redstart-teal-light rounded-xl overflow-hidden shadow-xl">
+          <div className="p-8 md:p-12 flex flex-col md:flex-row items-center">
+            <div className="md:w-2/3 mb-8 md:mb-0 md:pr-8">
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                Enterprise-grade solutions
+              </h3>
+              <p className="text-white/90 text-lg mb-6">
+                Need a custom solution for your organization? Our enterprise team can build a tailored package to meet your specific requirements.
+              </p>
+              <ul className="space-y-3">
+                {[
+                  "Custom development services",
+                  "Dedicated support team",
+                  "Advanced security features",
+                  "Service level agreements",
+                  "Custom training programs"
+                ].map((feature, index) => (
+                  <li key={index} className="flex items-start">
+                    <Check size={18} className="text-white mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-white/90">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="md:w-1/3 text-center">
+              <div className="bg-white p-6 rounded-lg shadow-inner">
+                <h4 className="text-xl font-bold text-redstart-teal mb-2">Ready to scale?</h4>
+                <p className="text-redstart-gray mb-6">Contact our sales team for a personalized quote.</p>
+                <Button className="w-full bg-redstart-teal hover:bg-redstart-teal-light text-white">
+                  Schedule a call
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
