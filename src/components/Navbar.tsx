@@ -24,7 +24,7 @@ const Navbar = () => {
           <div className="hidden md:flex md:items-center md:space-x-8">
             <a href="#features" className="text-redstart-dark hover:text-redstart-primary transition-colors duration-200 font-medium">Features</a>
             <a href="#testimonials" className="text-redstart-dark hover:text-redstart-primary transition-colors duration-200 font-medium">Testimonials</a>
-            <a href="#pricing" className="text-redstart-dark hover:text-redstart-primary transition-colors duration-200 font-medium">Pricing</a>
+            <a href="#plans" className="text-redstart-dark hover:text-redstart-primary transition-colors duration-200 font-medium">Plans</a>
             <a href="#contact" className="text-redstart-dark hover:text-redstart-primary transition-colors duration-200 font-medium">Contact</a>
           </div>
           
@@ -33,7 +33,7 @@ const Navbar = () => {
               Log in
             </Button>
             <Button className="bg-redstart-primary hover:bg-redstart-secondary text-white">
-              Start free trial
+              Register
             </Button>
           </div>
           
@@ -56,14 +56,14 @@ const Navbar = () => {
         <div className="px-4 py-2 space-y-1">
           <a href="#features" className="block py-2 text-redstart-dark hover:text-redstart-primary font-medium" onClick={() => setMobileMenuOpen(false)}>Features</a>
           <a href="#testimonials" className="block py-2 text-redstart-dark hover:text-redstart-primary font-medium" onClick={() => setMobileMenuOpen(false)}>Testimonials</a>
-          <a href="#pricing" className="block py-2 text-redstart-dark hover:text-redstart-primary font-medium" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
+          <a href="#plans" className="block py-2 text-redstart-dark hover:text-redstart-primary font-medium" onClick={() => setMobileMenuOpen(false)}>Plans</a>
           <a href="#contact" className="block py-2 text-redstart-dark hover:text-redstart-primary font-medium" onClick={() => setMobileMenuOpen(false)}>Contact</a>
           <div className="pt-2 pb-3 flex flex-col space-y-2">
             <Button variant="outline" className="border-redstart-teal text-redstart-teal hover:bg-redstart-teal hover:text-white w-full justify-center">
               Log in
             </Button>
             <Button className="bg-redstart-primary hover:bg-redstart-secondary text-white w-full justify-center">
-              Start free trial
+              Register
             </Button>
           </div>
         </div>
